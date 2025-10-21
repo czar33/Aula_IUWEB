@@ -1,0 +1,73 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/*Fundo com um leve gradiente*/
+body{
+    background: linear-gradient(135deg,#74abe2,#5563de);
+    height: 100vh;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*Container do formulario*/
+
+.form-container{
+    background: #fff;
+    padding:2rem 2.5rem;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0,0,0,.15);
+    width: 100%;
+    max-width: 400px;
+
+}
+
+label{
+    display: block;
+    margin-bottom:0.4rem;
+    font-weight: 600;
+    color:#444;
+}
+
+input{
+    width: 100%;
+    padding: 0.7rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    margin-bottom: 1.2rem;
+    transition: border-color 0.3s,box-shadow 0.3s;
+    font-size: 0.95rem;
+}
+
+/* efeito ao focar no input */
+
+input:focus{
+    border-color: #5563de;
+    box-shadow: 0 0 0 3px rgba(85,99,222,0.2);
+    outline: none
+}
+button{
+    width: 100%;
+    background:#5563de;
+    color:#fff;
+    border:none;
+    padding: 0.8rem;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.1s;
+}
+
+/*efeitos no botão*/
+button:hover{
+    background: #4451c6;
+}
+
+button:active{
+    transform: scale(0.98);
+}
